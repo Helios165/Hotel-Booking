@@ -1,3 +1,5 @@
+package org.example.demo1;
+
 import java.util.Date;
 
 // Need to import User and Booking classes
