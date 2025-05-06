@@ -1,7 +1,7 @@
 package org.example.demo1;
 
 import java.util.List;
-
+/*
 public class Customer extends User {
     
     private int loyaltyPoints;
@@ -65,3 +65,4 @@ public class Customer extends User {
 
     
 }
+*/

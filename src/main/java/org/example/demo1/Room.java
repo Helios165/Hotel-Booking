@@ -1,4 +1,5 @@
 package org.example.demo1;
+/*
 public class Room {
 
     private long ID;
@@ -79,3 +80,5 @@ public class Room {
 
 
 }
+
+ */

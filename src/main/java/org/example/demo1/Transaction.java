@@ -1,7 +1,7 @@
 package org.example.demo1;
 
 import java.util.Date;
-
+/*
 // Need to import User and Booking classes
 
 public class Transaction {
@@ -121,3 +121,4 @@ public class Transaction {
         // Probably should return this as a string too but we will see
     }
 }
+*/

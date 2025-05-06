@@ -1,4 +1,5 @@
 package org.example.demo1;
+/*
 public class UniqueRoom extends Room{
     private String uniqueFeature;
     private String theme;
@@ -30,3 +31,4 @@ public class UniqueRoom extends Room{
         return uniqueFeature.equals(that.uniqueFeature) && theme.equals(that.theme);
     }
 }
+*/

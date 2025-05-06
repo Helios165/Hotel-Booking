@@ -1,5 +1,5 @@
 package org.example.demo1;
-
+/*
 import java.util.List;
 
 import Rooms.Room;
@@ -44,7 +44,7 @@ public class Admin extends User {
         return null;
     }
     List<User> viewAllUsers() {
-        return User.getAllUsers()
+        return User.getAllUsers();
     }
     List<Room> viewAllRooms() {
         return Room.getAllRooms()
@@ -59,3 +59,4 @@ public class Admin extends User {
     }
 
 }
+*/

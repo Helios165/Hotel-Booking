@@ -1,4 +1,5 @@
 package org.example.demo1;
+/*
 public class StandardRoom extends Room{
 
     private String bedType;
@@ -33,3 +34,5 @@ public class StandardRoom extends Room{
 
     
 }
+
+ */

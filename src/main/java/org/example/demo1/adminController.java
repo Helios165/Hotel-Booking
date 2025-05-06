@@ -9,18 +9,18 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.Node;
 
-public class customerController {
+public class adminController {
     @FXML
-    private Button viewRoomsButton;
+    private Button manageRoomsButton;
 
     @FXML
-    private Button addBookingButton;
+    private Button manageUsersButton;
 
     @FXML
-    private Button viewHistoryButton;
+    private Button viewBookingsButton;
 
     @FXML
-    private Button managePaymentButton;
+    private Button myInfoButton;
 
     @FXML
     private Button logOutButton;
@@ -40,10 +40,10 @@ public class customerController {
 
         String hoverStyle = "-fx-background-color:#0A1A3F;  -fx-cursor: hand;";
 
-        setButtonHoverEffect(viewRoomsButton, originalStyle, hoverStyle);
-        setButtonHoverEffect(addBookingButton, originalStyle, hoverStyle);
-        setButtonHoverEffect(viewHistoryButton, originalStyle, hoverStyle);
-        setButtonHoverEffect(managePaymentButton, originalStyle, hoverStyle);
+        setButtonHoverEffect(manageRoomsButton, originalStyle, hoverStyle);
+        setButtonHoverEffect(manageUsersButton, originalStyle, hoverStyle);
+        setButtonHoverEffect(viewBookingsButton, originalStyle, hoverStyle);
+        setButtonHoverEffect(myInfoButton, originalStyle, hoverStyle);
         setButtonHoverEffect(logOutButton, originalStyle, hoverStyle);
     }
 
@@ -54,10 +54,10 @@ public class customerController {
 
 
     @FXML
-    private void handleViewRooms(ActionEvent event) {
-        System.out.println("View Available Rooms clicked");
+    private void handlemanageRooms(ActionEvent event) {
+        System.out.println("Manage Rooms clicked");
         try {
-            navigateToScreen("RoomsList.fxml", event, "Available Rooms");
+            navigateToScreen("ManageRooms.fxml", event, "Manage Rooms");
         } catch (IOException e) {
 
         }
@@ -65,30 +65,30 @@ public class customerController {
 
 
     @FXML
-    private void handleAddBooking(ActionEvent event) {
-        System.out.println("Add Booking clicked");
+    private void handlemanageUsers(ActionEvent event) {
+        System.out.println("Manage Users clicked");
         try {
-            navigateToScreen("NewBooking.fxml", event, "Create Booking");
+            navigateToScreen("ManageUsers.fxml", event, "Manage Users");
         } catch (IOException e) {
 
         }
     }
 
     @FXML
-    private void handleViewHistory(ActionEvent event) {
-        System.out.println("View Booking History clicked");
+    private void handleViewBookings(ActionEvent event) {
+        System.out.println("View All Bookings clicked");
         try {
-            navigateToScreen("BookingHistory.fxml", event, "Booking History");
+            navigateToScreen("ViewAllBookings.fxml", event, "All Bookings");
         } catch (IOException e) {
 
         }
     }
 
     @FXML
-    private void handleManagePayment(ActionEvent event) {
-        System.out.println("Manage Payment Methods clicked");
+    private void handlemyInfo(ActionEvent event) {
+        System.out.println("My Info clicked");
         try {
-            navigateToScreen("PaymentMethods.fxml", event, "Payment Methods");
+            navigateToScreen("MyInfo.fxml", event, "My Info");
         } catch (IOException e) {
 
         }
@@ -102,7 +102,6 @@ public class customerController {
 
         }
     }
-
     private void navigateToScreen(String fxmlFile, ActionEvent event, String title) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(fxmlFile));
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -111,4 +110,5 @@ public class customerController {
         stage.setScene(scene);
         stage.show();
     }
+
 }

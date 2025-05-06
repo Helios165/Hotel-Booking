@@ -18,9 +18,6 @@ import java.io.IOException;
 
 public class loginController {
 
-
-
-    Stage Stage = new Stage();
     @FXML
     public Button backFromLoginBtn;
 
@@ -45,15 +42,14 @@ public class loginController {
     }
 
     public void onDoLogin(ActionEvent event) throws IOException {
-
-
-        // change the destination to the next scene
-        navigateToScreen("customer2.fxml", event, "...");
-
+        if(loginUsernameField.getText().equals("admin") && loginPasswordField.getText().equals("admin")){
+            navigateToScreen("Admin.fxml", event, "...");
+        }
+        else {
+            // change the destination to the next scene
+            navigateToScreen("customer2.fxml", event, "...");
+        }
     }
-
-
-
 
     private void navigateToScreen(String fxmlFile, ActionEvent event, String title) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(fxmlFile));

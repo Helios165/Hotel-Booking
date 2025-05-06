@@ -1,6 +1,6 @@
 package org.example.demo1;
 import java.util.List;
-
+/*
 public class LuxuryRoom extends Room {
     private boolean hasJacuzzi;
     private boolean hasPrivateBalcony;
@@ -39,3 +39,5 @@ public class LuxuryRoom extends Room {
         return hasJacuzzi == that.hasJacuzzi && hasBalcony == that.hasBalcony && complimentaryServices.equals(that.complimentaryServices);
 
 }
+
+*/
